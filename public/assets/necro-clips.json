@@ -1,0 +1,38 @@
+{
+ "height": 0.9999998807907104,
+ "clips": {
+  "Idle": {
+   "frames": 24,
+   "duration": 0.9583333333333334,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Walk": {
+   "frames": 57,
+   "duration": 2.3333333333333335,
+   "speed": 1.0,
+   "loop": true,
+   "stanceSpeed": 0.6455214083855004
+  },
+  "Slash": {
+   "frames": 71,
+   "duration": 2.9166666666666665,
+   "speed": 1.35,
+   "loop": false,
+   "hitTime": 1.375
+  },
+  "Cast": {
+   "frames": 71,
+   "duration": 2.9166666666666665,
+   "speed": 1.25,
+   "loop": false,
+   "hitTime": 2.0
+  },
+  "Death": {
+   "frames": 89,
+   "duration": 3.6666666666666665,
+   "speed": 1.2,
+   "loop": false
+  }
+ }
+}

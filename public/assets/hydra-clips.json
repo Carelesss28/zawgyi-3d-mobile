@@ -1,0 +1,87 @@
+{
+ "length": 1.0,
+ "height": 0.37,
+ "heads": [
+  [
+   0.031,
+   -0.461
+  ],
+  [
+   0.136,
+   -0.413
+  ],
+  [
+   -0.12,
+   -0.452
+  ],
+  [
+   -0.1,
+   -0.405
+  ],
+  [
+   0.089,
+   -0.41
+  ]
+ ],
+ "clips": {
+  "Idle": {
+   "frames": 61,
+   "duration": 2.5,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Walk": {
+   "frames": 37,
+   "duration": 1.5,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Roar": {
+   "frames": 49,
+   "duration": 2.0,
+   "speed": 1.0,
+   "loop": false
+  },
+  "Strike0": {
+   "frames": 37,
+   "duration": 1.5,
+   "speed": 1.0,
+   "loop": false,
+   "hitTime": 0.6666666666666666
+  },
+  "Strike1": {
+   "frames": 37,
+   "duration": 1.5,
+   "speed": 1.0,
+   "loop": false,
+   "hitTime": 0.6666666666666666
+  },
+  "Strike2": {
+   "frames": 37,
+   "duration": 1.5,
+   "speed": 1.0,
+   "loop": false,
+   "hitTime": 0.6666666666666666
+  },
+  "Strike3": {
+   "frames": 37,
+   "duration": 1.5,
+   "speed": 1.0,
+   "loop": false,
+   "hitTime": 0.6666666666666666
+  },
+  "Strike4": {
+   "frames": 37,
+   "duration": 1.5,
+   "speed": 1.0,
+   "loop": false,
+   "hitTime": 0.6666666666666666
+  },
+  "Death": {
+   "frames": 61,
+   "duration": 2.5,
+   "speed": 1.0,
+   "loop": false
+  }
+ }
+}

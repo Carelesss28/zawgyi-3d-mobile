@@ -1,0 +1,24 @@
+{
+ "height": 0.9989140613179188,
+ "clips": {
+  "Idle": {
+   "frames": 49,
+   "duration": 2.0,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Shuffle": {
+   "frames": 21,
+   "duration": 0.8333333333333334,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Shoot": {
+   "frames": 37,
+   "duration": 1.5,
+   "speed": 1.0,
+   "loop": false,
+   "hitTime": 0.75
+  }
+ }
+}

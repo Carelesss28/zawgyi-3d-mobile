@@ -1,0 +1,60 @@
+{
+ "height": 1.0,
+ "tris": 5000,
+ "clips": {
+  "Cower": {
+   "frames": 63,
+   "duration": 2.5833333333333335,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Bow": {
+   "frames": 145,
+   "duration": 6.0,
+   "speed": 1.0,
+   "loop": false
+  },
+  "Clap": {
+   "frames": 329,
+   "duration": 13.666666666666666,
+   "speed": 1.0,
+   "loop": false
+  },
+  "Cry": {
+   "frames": 190,
+   "duration": 7.875,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Run": {
+   "frames": 31,
+   "duration": 1.25,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Walk": {
+   "frames": 57,
+   "duration": 2.3333333333333335,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Wave": {
+   "frames": 142,
+   "duration": 5.875,
+   "speed": 1.0,
+   "loop": false
+  },
+  "Idle": {
+   "frames": 87,
+   "duration": 3.6,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Sit": {
+   "frames": 97,
+   "duration": 4.0,
+   "speed": 1.0,
+   "loop": true
+  }
+ }
+}

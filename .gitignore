@@ -1,0 +1,16 @@
+node_modules
+dist
+test-results
+.vercel
+art/out/prev
+shots
+
+.vercel
+
+debug.log
+*.log
+art/
+shots/
+live_mobile.png
+*.bak
+*.zip

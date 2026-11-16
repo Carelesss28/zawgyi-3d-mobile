@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#08161a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Zaw Gyi: Staff Combat Test</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="view" tabindex="0"></canvas>
+
+  <div id="hud" class="hidden">
+    <div id="health"></div>
+    <div id="combo-name"></div>
+    <div id="debug"></div>
+    <canvas id="minimap" width="132" height="132"></canvas>
+  </div>
+
+  <div id="boss-bar"><div class="name">TEMPLE GUARDIAN</div><div class="track"><div id="boss-fill"></div><div id="boss-hp"></div></div></div>
+
+  <div id="touch" class="hidden">
+    <div id="zone-left"></div>
+    <div id="stick"><div id="knob"></div></div>
+    <button id="btn-dash" class="btn small" aria-label="Dash">DASH</button>
+    <button id="btn-leap" class="btn small" aria-label="Leap Strike">LEAP</button>
+    <button id="btn-jump" class="btn small" aria-label="Jump">JUMP</button>
+    <button id="btn-el1" class="btn el" aria-label="Element 1"></button><button id="btn-el2" class="btn el" aria-label="Element 2"></button><button id="btn-el3" class="btn el" aria-label="Element 3"></button>
+    <button id="btn-invoke" class="btn invoke" aria-label="Invoke"><span class="orbs"></span><span class="lbl">INVOKE</span></button>
+    <button id="btn-cast1" class="btn skill art cast" aria-label="Spell 1"><span class="lbl"></span><span class="cdnum"></span></button>
+    <button id="btn-cast2" class="btn skill art cast" aria-label="Spell 2"><span class="lbl"></span><span class="cdnum"></span></button>
+    <button id="btn-skill3" class="btn skill art" aria-label="Twin Kick"><span class="lbl">KICK</span><span class="cdnum"></span></button>
+    <button id="btn-attack" class="btn big" aria-label="Attack">
+      <span class="icon">&#9876;</span>
+      <span id="pips"><i></i><i></i><i></i><i></i></span>
+    </button>
+    <button id="btn-altar" class="btn hidden" aria-label="Altar"><span class="lbl">ALTAR</span></button>
+    <button id="btn-travel" class="btn hidden" aria-label="Travel"><span class="lbl">TRAVEL</span></button>
+    <button id="btn-spells" class="btn tiny" aria-label="Spells">SPELLS</button>
+    <button id="btn-zoom" class="btn tiny" aria-label="Zoom">ZOOM</button>
+    <button id="btn-reset" class="btn tiny" aria-label="Reset">RESET</button>
+  </div>
+
+  <div id="chapter-done" class="overlay">
+    <div class="panel"><h2>Chapter 1 Complete</h2><p>The Naga is free of the seal's control, and the gate out of the Sealed Zone stands open.<br/>Somewhere beyond the valley, a false king waits on a stolen throne.</p><p class="small">Chapter 2 is coming soon.</p>
+      <button id="btn-continue" class="start" onclick="document.getElementById('chapter-done').classList.remove('show')">Keep exploring</button></div>
+  </div>
+  <div id="loading" class="overlay show">
+    <div class="panel">
+      <h1>ZAW GYI</h1>
+      <p class="sub">Staff Combat Test</p>
+      <div class="bar"><div id="bar-fill"></div></div>
+      <p id="load-text" class="small">Loading the apprentice&hellip;</p>
+      <pre id="load-error" class="error hidden"></pre>
+    </div>
+  </div>
+
+  <div id="start" class="overlay menu">
+    <div class="mm-left">
+      <div class="mm-logo">ZAW GYI</div>
+      <div class="mm-tag">THE FORGOTTEN SAINT</div>
+      <div class="mm-ch">Chapter 1 &middot; The Sealed Zone</div>
+      <nav class="mm-list">
+        <button id="btn-resume" class="start mm-item hidden">Continue</button>
+        <button id="btn-start" class="start mm-item">Start Game</button>
+        <button id="btn-intro" class="mm-item">Prologue</button>
+        <button id="btn-spells-menu" class="mm-item">Spells</button>
+        <button id="btn-controls" class="mm-item">Controls</button>
+      </nav>
+      <div class="mm-foot">test build &middot; placeholder sounds</div>
+    </div>
+    <div id="mm-controls" class="mm-panel hidden">
+      <div id="help-touch" class="help">
+        <b>Phone</b><br/>Drag on the left half to move.<br/>Tap <b>&#9876;</b> to attack. Tap again in rhythm: 4 hits (staff, staff, kick, slam).<br/>Tap <b>DASH</b> to roll through attacks. <b>JUMP</b> clears logs, rubble and broken walls; tap again in the air to double jump.<br/><b>Spells:</b> tap two of your three <b>elements</b> (they circle you), then <b>INVOKE</b> to make their spell; cast it from the two spell slots. Choose your three elements on the <b>Spells</b> screen.
+      </div>
+      <div id="help-desk" class="help">
+        <b>Keyboard and mouse</b><br/>WASD / arrows: move &middot; Mouse: aim<br/>Left click or J: attack (tap in rhythm for 4 hits; the 2nd hit stuns) &middot; Shift: dash &middot; V: Leap Strike (blink behind an enemy and strike) &middot; Space: jump (press again in the air to double jump)<br/>1 2 3: pick elements &middot; R: invoke &middot; Q / E: cast spell 1 / 2 &middot; F: Twin Kick<br/>M: world map &middot; G: travel (at an awake Soul Shrine) &middot; T: altar (stats, relics, level up) &middot; Z: zoom &middot; P: reset
+      </div>
+      <label class="small"><input id="chk-touch" type="checkbox" /> Force touch controls</label>
+      <label class="small"><input id="chk-fps120" type="checkbox" /> 120 fps mode (smoother on 120 Hz phones, uses more battery)</label>
+      <label class="small"><input id="chk-glow" type="checkbox" /> Glow and colour (turn off on slow phones)</label>
+      <label class="small">Ground and trees: <select id="sel-look"></select></label>
+      <button id="btn-controls-close" class="mm-close">Close</button>
+    </div>
+  </div>
+
+  <div id="rotate" class="overlay">
+    <div class="panel"><div class="spin">&#10227;</div><h2>Please rotate your phone</h2><p class="small">The test plays in landscape.</p></div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+  <div id="spells-panel" class="hidden"></div>
+</body>
+</html>

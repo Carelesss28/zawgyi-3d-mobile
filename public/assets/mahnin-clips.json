@@ -1,0 +1,41 @@
+{
+ "height": 1.0000000691467221,
+ "clips": {
+  "Idle": {
+   "frames": 375,
+   "duration": 15.583333333333334,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Cry": {
+   "frames": 190,
+   "duration": 7.875,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Afraid": {
+   "frames": 63,
+   "duration": 2.5833333333333335,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Wave": {
+   "frames": 159,
+   "duration": 6.583333333333333,
+   "speed": 1.1,
+   "loop": false
+  },
+  "Sit": {
+   "frames": 173,
+   "duration": 7.166666666666667,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Walk": {
+   "frames": 57,
+   "duration": 2.3333333333333335,
+   "speed": 1.0,
+   "loop": true
+  }
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "height": 1.0000000905353943,
+ "tris": 8744,
+ "clips": {
+  "Death": {
+   "frames": 134,
+   "duration": 5.541666666666667,
+   "speed": 1.5,
+   "loop": false
+  },
+  "Idle": {
+   "frames": 369,
+   "duration": 15.333333333333334,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Run": {
+   "frames": 31,
+   "duration": 1.25,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Slash": {
+   "frames": 159,
+   "duration": 6.583333333333333,
+   "speed": 1.35,
+   "loop": false,
+   "hitTime": 2.0416666666666665,
+   "end": 2.9416666666666664
+  },
+  "Hit": {
+   "frames": 14,
+   "duration": 0.55,
+   "speed": 1.0,
+   "loop": false
+  },
+  "Walk": {
+   "frames": 25,
+   "duration": 1.0,
+   "speed": 1.0,
+   "loop": true,
+   "strideSpeed": 0.46846599036209813
+  }
+ }
+}

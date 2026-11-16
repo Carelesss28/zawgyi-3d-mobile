@@ -1,0 +1,17 @@
+{
+ "height": 0.9768068064683106,
+ "clips": {
+  "Idle": {
+   "frames": 24,
+   "duration": 0.9583333333333334,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Run": {
+   "frames": 31,
+   "duration": 1.25,
+   "speed": 1.0,
+   "loop": true
+  }
+ }
+}

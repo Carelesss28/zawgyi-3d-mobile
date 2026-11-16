@@ -1,0 +1,111 @@
+{
+ "Attack1": {
+  "frames": 21,
+  "duration": 0.8333333333333334,
+  "speed": 1.95,
+  "loop": false,
+  "source": "A fast horizontal",
+  "hitTime": 0.375
+ },
+ "Attack2": {
+  "frames": 29,
+  "duration": 1.1666666666666667,
+  "speed": 2.1,
+  "loop": false,
+  "source": "A rising diagonal",
+  "hitTime": 0.8333333333333334
+ },
+ "Attack3": {
+  "frames": 33,
+  "duration": 1.3333333333333333,
+  "speed": 1.85,
+  "loop": false,
+  "source": "A heavy overhead",
+  "hitTime": 0.8333333333333334
+ },
+ "Run": {
+  "frames": 30,
+  "duration": 1.2083333333333333,
+  "speed": 1.0,
+  "loop": true,
+  "source": "run.001",
+  "stanceSpeed": 3.276250769120343,
+  "stanceSamples": 13
+ },
+ "Hit": {
+  "frames": 15,
+  "duration": 0.5833333333333334,
+  "speed": 1.2,
+  "loop": false,
+  "source": "hit_to_body_01"
+ },
+ "Skill1": {
+  "frames": 36,
+  "duration": 1.4583333333333333,
+  "speed": 1.5,
+  "loop": false,
+  "source": "cast_a_spell",
+  "hitTime": 0.5833333333333334
+ },
+ "Seal": {
+  "frames": 56,
+  "duration": 2.2916666666666665,
+  "speed": 1.6,
+  "loop": false,
+  "source": "box_02",
+  "hitTime": 1.875,
+  "hit2Time": 2.1666666666666665
+ },
+ "Chain": {
+  "frames": 55,
+  "duration": 2.25,
+  "speed": 1.7,
+  "loop": false,
+  "source": "chop",
+  "hitTime": 1.25
+ },
+ "Kick1": {
+  "frames": 39,
+  "duration": 1.5833333333333333,
+  "speed": 2.0,
+  "loop": false,
+  "source": "front_kick_01",
+  "hitTime": 0.6666666666666666
+ },
+ "Kick2": {
+  "frames": 30,
+  "duration": 1.2083333333333333,
+  "speed": 1.75,
+  "loop": false,
+  "source": "front_kick_02",
+  "hitTime": 0.75
+ },
+ "Dash": {
+  "frames": 33,
+  "duration": 1.3333333333333333,
+  "speed": 2.9,
+  "loop": false,
+  "source": "dive"
+ },
+ "Death": {
+  "frames": 53,
+  "duration": 2.1666666666666665,
+  "speed": 1.3,
+  "loop": false,
+  "source": "defeat_03"
+ },
+ "Idle": {
+  "frames": 25,
+  "duration": 1.0,
+  "speed": 1.0,
+  "loop": true,
+  "source": "pose"
+ },
+ "Throne": {
+  "frames": 25,
+  "duration": 1.0,
+  "speed": 1.0,
+  "loop": true,
+  "source": "sit.001"
+ }
+}

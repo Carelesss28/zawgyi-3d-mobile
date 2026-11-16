@@ -1,0 +1,61 @@
+{
+ "height": 1.0000002624575188,
+ "tris": 8817,
+ "clips": {
+  "Afraid": {
+   "frames": 63,
+   "duration": 2.5833333333333335,
+   "speed": 1.0,
+   "loop": false
+  },
+  "Frustrated": {
+   "frames": 86,
+   "duration": 3.5416666666666665,
+   "speed": 1.0,
+   "loop": false
+  },
+  "Hit": {
+   "frames": 31,
+   "duration": 1.25,
+   "speed": 1.0,
+   "loop": false
+  },
+  "Run": {
+   "frames": 31,
+   "duration": 1.25,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Swagger": {
+   "frames": 89,
+   "duration": 3.6666666666666665,
+   "speed": 1.0,
+   "loop": false
+  },
+  "Walk": {
+   "frames": 57,
+   "duration": 2.3333333333333335,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Idle": {
+   "frames": 49,
+   "duration": 2.0,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Shoot": {
+   "frames": 36,
+   "duration": 1.45,
+   "speed": 1.0,
+   "loop": false,
+   "hitTime": 0.68
+  },
+  "Death": {
+   "frames": 42,
+   "duration": 1.7,
+   "speed": 1.0,
+   "loop": false
+  }
+ }
+}

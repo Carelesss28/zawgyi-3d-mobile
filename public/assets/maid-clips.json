@@ -1,0 +1,43 @@
+{
+ "height": 1.0,
+ "tris": 8721,
+ "clips": {
+  "Idle": {
+   "frames": 97,
+   "duration": 4.0,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Glide": {
+   "frames": 30,
+   "duration": 1.2,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Scream": {
+   "frames": 41,
+   "duration": 1.67,
+   "speed": 1.0,
+   "loop": false,
+   "hitTime": 0.8
+  },
+  "Cry": {
+   "frames": 49,
+   "duration": 2.0,
+   "speed": 1.0,
+   "loop": true
+  },
+  "Hit": {
+   "frames": 14,
+   "duration": 0.55,
+   "speed": 1.0,
+   "loop": false
+  },
+  "Death": {
+   "frames": 37,
+   "duration": 1.5,
+   "speed": 1.0,
+   "loop": false
+  }
+ }
+}
